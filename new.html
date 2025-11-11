@@ -119,7 +119,14 @@
                         </div>
 
                         <!-- Call to Action -->
-                        <a href="#contact" class="btn-contact">View blog</a>
+                        <a href="https://hacksland.net" class="btn-contact">Blog</a>
+                                                        <a
+                                    href="/assets/Thilan_Dissanayaka_Resume.pdf"
+                                    download
+                                    class="btn-resume"
+                                >
+                                    Resume
+                                </a>
                     </div>
                 </section>
 
@@ -155,15 +162,6 @@
                                 continuous learning and staying updated with
                                 emerging technologies.
                             </p>
-                            <div class="about-cta">
-                                <a
-                                    href="assets/Thilan_Dissanayaka_Resume.pdf"
-                                    download
-                                    class="btn-resume"
-                                >
-                                    Download Resume
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -688,4 +686,21 @@
             </div>
         </div>
     </body>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section, .hero, .education, .skills, .projects, .sessions");
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("section-animate");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
 </html>
