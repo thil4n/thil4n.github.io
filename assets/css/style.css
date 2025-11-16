@@ -153,7 +153,6 @@ body {
     padding: 2rem;
     margin: 0 auto;
     text-align: center;
-
 }
 
 /* Profile picture wrapper (gradient border) */
@@ -193,7 +192,7 @@ body {
 }
 
 .hero-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #6b7280;
     max-width: 600px;
     margin: 0 auto 1.5rem;
@@ -219,7 +218,6 @@ body {
     filter: brightness(1.2);
 }
 
-/* Call to action button */
 .btn-contact {
     display: inline-block;
     background-color: var(--teal);
@@ -286,7 +284,7 @@ body {
 }
 
 .about-card p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #374151;
     line-height: 1.8;
     margin-bottom: 1.5rem;
@@ -815,7 +813,6 @@ body {
     }
 }
 
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -827,18 +824,32 @@ body {
     }
 }
 
-
 .section-animate {
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
 }
 
-
-.hero.section-animate { animation-delay: 0.1s; }
-.about.section-animate { animation-delay: 0.2s; }
-.career.section-animate { animation-delay: 0.3s; }
-.education.section-animate { animation-delay: 0.4s; }
-.skills.section-animate { animation-delay: 0.5s; }
-.projects.section-animate { animation-delay: 0.6s; }
-.sessions.section-animate { animation-delay: 0.7s; }
-.footer.section-animate { animation-delay: 0.8s; }
+.hero.section-animate {
+    animation-delay: 0.1s;
+}
+.about.section-animate {
+    animation-delay: 0.2s;
+}
+.career.section-animate {
+    animation-delay: 0.3s;
+}
+.education.section-animate {
+    animation-delay: 0.4s;
+}
+.skills.section-animate {
+    animation-delay: 0.5s;
+}
+.projects.section-animate {
+    animation-delay: 0.6s;
+}
+.sessions.section-animate {
+    animation-delay: 0.7s;
+}
+.footer.section-animate {
+    animation-delay: 0.8s;
+}
