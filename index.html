@@ -1,42 +1,639 @@
-<!DOCTYPE html>
-<title>Site Maintenance</title>
-<style>
-    body {
-        text-align: center;
-        padding: 150px;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    body {
-        font: 20px Helvetica, sans-serif;
-        color: #333;
-    }
-    article {
-        display: block;
-        text-align: left;
-        width: 650px;
-        margin: 0 auto;
-    }
-    a {
-        color: #dc8100;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #333;
-        text-decoration: none;
-    }
-</style>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thilan Dissanayaka</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div id="root">
+            <div class="min-h-screen bg-white">
+                <nav class="navbar">
+                    <div class="navbar-container">
+                        <!-- Brand -->
+                        <a href="#home" class="navbar-brand">Portfolio</a>
 
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>
-            Sorry for the inconvenience but we&rsquo;re performing some
-            maintenance at the moment. If you need to you can always
-            <a href="mailto:#">contact us</a>, otherwise we&rsquo;ll be back
-            online shortly!
-        </p>
-        <p>&mdash; The Team</p>
-    </div>
-</article>
+                        <!-- Hamburger button for mobile -->
+                        <input
+                            type="checkbox"
+                            id="menu-toggle"
+                            class="menu-toggle"
+                        />
+                        <label for="menu-toggle" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+
+                        <!-- Links -->
+                        <div class="navbar-links">
+                            <a href="#home" class="nav-link">Home</a>
+                            <a href="#about" class="nav-link">About</a>
+                            <a href="#career" class="nav-link">Career</a>
+                            <a href="#education" class="nav-link">Education</a>
+                            <a href="#skills" class="nav-link">Skills</a>
+                            <a href="#projects" class="nav-link">Projects</a>
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <section id="home" class="hero">
+                    <div class="hero-content">
+                        <!-- Profile Picture with Gradient Border -->
+                        <div class="profile-pic-wrapper">
+                            <img
+                                src="assets/img/profile.jpeg"
+                                alt="Thilan Dissanayaka"
+                                class="profile-pic"
+                            />
+                        </div>
+
+                        <!-- Name & Title -->
+                        <h1 class="hero-name">Thilan Dissanayaka</h1>
+                        <h2 class="hero-title">
+                            Engineer / Security Researcher / Developer
+                        </h2>
+                        <p class="hero-description">
+                            Building secure, scalable applications with modern
+                            technologies. Passionate about clean code and
+                            cybersecurity.
+                        </p>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a
+                                href="mailto:thilan@wso2.com"
+                                class="social-icon"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 13l8-7.99V6H4zm0 12h16V8l-8 7-8-7v10z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <a
+                                href="https://github.com/thil4n"
+                                target="_blank"
+                                class="social-icon"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M12 0a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.26 1.86 1.26 1.08 1.84 2.83 1.31 3.52 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.43 11.43 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.85 1.23 1.93 1.23 3.25 0 4.64-2.81 5.66-5.48 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0012 0z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/thil4n"
+                                target="_blank"
+                                class="social-icon"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M20.45 20.45h-3.55v-5.33c0-1.27-.03-2.89-1.76-2.89-1.76 0-2.03 1.37-2.03 2.79v5.43H9.33V9h3.41v1.56h.05c.48-.91 1.66-1.87 3.41-1.87 3.64 0 4.31 2.4 4.31 5.52v6.3zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zm1.77 13.02H3.56V9h3.55v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Call to Action -->
+                        <a href="https://hacksland.net" class="btn-contact"
+                            >Blog</a
+                        >
+                        <a
+                            href="/assets/Thilan_Dissanayaka_Resume.pdf"
+                            download
+                            class="btn-resume"
+                        >
+                            Resume
+                        </a>
+                    </div>
+                </section>
+
+                <section id="about" class="about">
+                    <div class="about-container">
+                        <h2 class="about-title">About Me</h2>
+
+                        <div class="about-card">
+                            <p>
+                                I completed my BSc in Electrical Engineering,
+                                where I explored areas like power generation,
+                                distribution, and machine systems. But even back
+                                then, my true interest was always in computers
+                                and software. I’ve always loved coding and
+                                building things that solve real-world problems.
+                                Specially anything related to low-level systems.
+                            </p>
+                            <p>
+                                Today, I work as a Security Engineer at WSO2. My
+                                journey in tech began with a curiosity about how
+                                things work under the hood, which naturally led
+                                me into both software development and
+                                cybersecurity.
+                            </p>
+                            <p>
+                                I specialize in full-stack development with a
+                                strong focus on security best practices. Whether
+                                it’s designing scalable architectures,
+                                implementing secure authentication systems, or
+                                optimizing system performance, I approach every
+                                project with attention to detail and a
+                                commitment to quality.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="career" class="career">
+                    <div class="career-container">
+                        <h2 class="career-title">Career Experience</h2>
+
+                        <div class="career-list">
+                            <!-- Security Engineer -->
+                            <div class="career-item">
+                                <div class="career-icon">
+                                    <img
+                                        src="assets/icons/briefcase.svg"
+                                        alt="Security Engineer Icon"
+                                    />
+                                </div>
+                                <div class="career-content">
+                                    <div class="career-header">
+                                        <div>
+                                            <h3>Security Engineer</h3>
+                                            <p class="career-company">WSO2</p>
+                                        </div>
+                                        <span class="career-date"
+                                            >2025 june - Present</span
+                                        >
+                                    </div>
+                                    <ul class="career-responsibilities">
+                                        <li>
+                                            Focus on application security,
+                                            Penetration testing and
+                                            vulnerability assessments.
+                                        </li>
+                                        <li>
+                                            Hands on Experience in Java, Go
+                                            application security.
+                                        </li>
+                                        <li>
+                                            Works on both red team and blue team
+                                            security.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Software Engineer Intern -->
+                            <div class="career-item">
+                                <div class="career-icon">
+                                    <img
+                                        src="assets/icons/briefcase.svg"
+                                        alt="Intern Icon"
+                                    />
+                                </div>
+                                <div class="career-content">
+                                    <div class="career-header">
+                                        <div>
+                                            <h3>Software Engineer Intern</h3>
+                                            <p class="career-company">WSO2</p>
+                                        </div>
+                                        <span class="career-date"
+                                            >2024 december - 2025 june</span
+                                        >
+                                    </div>
+                                    <ul class="career-responsibilities">
+                                        <li>Worked in API Manager BU.</li>
+                                        <li>
+                                            Completed a research project on
+                                            Token validation in Edge computing.
+                                        </li>
+                                        <li>
+                                            Developed the Ballerina Web3 tool
+                                            and the library to work with
+                                            blockchains.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="education">
+                    <div class="education-container">
+                        <h2 class="education-title">Education</h2>
+
+                        <div class="education-list">
+                            <!-- Bachelor of Science -->
+                            <div class="education-item">
+                                <div class="education-icon">
+                                    <img
+                                        src="assets/icons/award.svg"
+                                        alt="Award Icon"
+                                    />
+                                </div>
+                                <div class="education-content">
+                                    <h3>
+                                        BSc in Electrical and Information
+                                        Engineering
+                                    </h3>
+                                    <p class="education-institution">
+                                        University of Ruhuna, Faculty of
+                                        Engineering
+                                    </p>
+                                    <p class="education-degree">
+                                        Specialized in Software Engineering
+                                    </p>
+                                    <p class="education-details">
+                                        A comprehensive multidisciplinary
+                                        program covering Electrical Engineering,
+                                        Software Engineering, Telecommunication
+                                        Engineering, and Electronics
+                                        Engineering.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills & Technologies -->
+                <section id="skills" class="skills">
+                    <div class="container">
+                        <h2>Skills & Technologies</h2>
+                        <div class="skills-grid">
+                            <!-- Programming -->
+                            <div class="skills-card">
+                                <div class="skills-header">
+                                    <img
+                                        src="assets/icons/code.svg"
+                                        alt="Programming Icon"
+                                        class="skills-icon"
+                                    />
+                                    <h3>Software Development</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>Frontend</span>
+                                    <span>API / Middleware</span>
+                                    <span>Mobile Apps</span>
+                                    <span>BlockChain</span>
+                                    <span>C/C++/Assembly</span>
+                                    <span>OS/HPC</span>
+                                </div>
+                            </div>
+
+                            <!-- Frameworks -->
+                            <div class="skills-card">
+                                <div class="skills-header">
+                                    <img
+                                        src="assets/icons/layers.svg"
+                                        alt="Frameworks Icon"
+                                        class="skills-icon"
+                                    />
+                                    <h3>Security</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>AppSec</span>
+                                    <span>Pen testing</span>
+                                    <span>Exploit dev</span>
+                                    <span>Shellcoding</span>
+                                    <span>Hardware</span>
+                                    <span>Mobile</span>
+                                </div>
+                            </div>
+
+                            <!-- Tools -->
+                            <div class="skills-card">
+                                <div class="skills-header">
+                                    <img
+                                        src="assets/icons/wrench.svg"
+                                        alt="Tools Icon"
+                                        class="skills-icon"
+                                    />
+                                    <h3>DevOps</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>Linux</span>
+                                    <span>Docker</span>
+                                    <span>Kubernetes</span>
+                                    <span>Database</span>
+                                    <span>GIT</span>
+                                    <span>AWS</span>
+                                </div>
+                            </div>
+
+                            <!-- Security -->
+                            <div class="skills-card">
+                                <div class="skills-header">
+                                    <img
+                                        src="assets/icons/shield.svg"
+                                        alt="Security Icon"
+                                        class="skills-icon"
+                                    />
+                                    <h3>Security</h3>
+                                </div>
+                                <div class="skills-list">
+                                    <span>OWASP</span>
+                                    <span>Penetration Testing</span>
+                                    <span>Encryption</span>
+                                    <span>JWT</span>
+                                    <span>OAuth</span>
+                                    <span>HTTPS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section id="projects" class="projects">
+                    <div class="container">
+                        <h2>Featured Projects</h2>
+                        <div class="projects-grid">
+                            <!-- SecureAuth Platform -->
+                            <div class="project-card">
+                                <h3>SecureAuth Platform</h3>
+                                <p>
+                                    A comprehensive authentication system with
+                                    multi-factor authentication, OAuth
+                                    integration, and advanced security features
+                                    including rate limiting and token rotation.
+                                </p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>PostgreSQL</span>
+                                    <span>JWT</span>
+                                    <span>Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Code</a
+                                    >
+                                    <a
+                                        href="https://demo.example.com"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Vulnerability Scanner -->
+                            <div class="project-card">
+                                <h3>Vulnerability Scanner</h3>
+                                <p>
+                                    Automated security scanning tool that
+                                    identifies common vulnerabilities in web
+                                    applications. Features include SQL injection
+                                    detection, XSS scanning, and security header
+                                    analysis.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                    <span>Docker</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Code</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- E-Commerce Dashboard -->
+                            <div class="project-card">
+                                <h3>E-Commerce Dashboard</h3>
+                                <p>
+                                    Full-stack analytics dashboard for
+                                    e-commerce platforms with real-time data
+                                    visualization, inventory management, and
+                                    sales tracking capabilities.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Next.js</span>
+                                    <span>TypeScript</span>
+                                    <span>Tailwind CSS</span>
+                                    <span>Supabase</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Code</a
+                                    >
+                                    <a
+                                        href="https://demo.example.com"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- API Gateway Service -->
+                            <div class="project-card">
+                                <h3>API Gateway Service</h3>
+                                <p>
+                                    Microservices API gateway with request
+                                    routing, load balancing, authentication,
+                                    rate limiting, and comprehensive logging for
+                                    monitoring and debugging.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Go</span>
+                                    <span>Redis</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Code</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="sessions" class="sessions">
+                    <div class="container">
+                        <h2>Projects & Sessions I Conducted</h2>
+                        <div class="sessions-grid">
+                            <!-- Example Session 1 -->
+                            <div class="session-card">
+                                <h3>Web Security Workshop</h3>
+                                <p>
+                                    Conducted a hands-on workshop on web
+                                    application security covering OWASP Top 10
+                                    vulnerabilities, secure coding practices,
+                                    and penetration testing basics.
+                                </p>
+                                <div class="session-tech">
+                                    <span>OWASP</span>
+                                    <span>Penetration Testing</span>
+                                    <span>JWT</span>
+                                    <span>HTTPS</span>
+                                </div>
+                                <div class="session-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Resources</a
+                                    >
+                                    <a
+                                        href="https://demo.example.com"
+                                        target="_blank"
+                                        >Demo</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Example Session 2 -->
+                            <div class="session-card">
+                                <h3>Full-Stack Development Bootcamp</h3>
+                                <p>
+                                    Led a session on building full-stack web
+                                    applications with React, Node.js, and
+                                    PostgreSQL, including hands-on coding
+                                    exercises and deployment practices.
+                                </p>
+                                <div class="session-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="session-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Resources</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Example Session 3 -->
+                            <div class="session-card">
+                                <h3>API Development & Security</h3>
+                                <p>
+                                    Conducted a session focusing on REST API
+                                    development, authentication mechanisms, rate
+                                    limiting, and logging for microservices
+                                    architecture.
+                                </p>
+                                <div class="session-tech">
+                                    <span>Go</span>
+                                    <span>Redis</span>
+                                    <span>PostgreSQL</span>
+                                    <span>JWT</span>
+                                </div>
+                                <div class="session-links">
+                                    <a href="https://github.com" target="_blank"
+                                        >Resources</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="footer-container">
+                        <p class="footer-copy">
+                            © 2025 Thilan Dissanayaka. All rights reserved.
+                        </p>
+                        <div class="footer-social">
+                            <a
+                                href="mailto:thilan@wso2.com"
+                                class="social-icon"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 13l8-7.99V6H4zm0 12h16V8l-8 7-8-7v10z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <a
+                                href="https://github.com/thil4n"
+                                target="_blank"
+                                class="social-icon"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M12 0a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.26 1.86 1.26 1.08 1.84 2.83 1.31 3.52 1 .11-.77.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.43 11.43 0 016 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.25 2.87.12 3.17.77.85 1.23 1.93 1.23 3.25 0 4.64-2.81 5.66-5.48 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0012 0z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://linkedin.com/in/thil4n"
+                                target="_blank"
+                                class="social-icon"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M20.45 20.45h-3.55v-5.33c0-1.27-.03-2.89-1.76-2.89-1.76 0-2.03 1.37-2.03 2.79v5.43H9.33V9h3.41v1.56h.05c.48-.91 1.66-1.87 3.41-1.87 3.64 0 4.31 2.4 4.31 5.52v6.3zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zm1.77 13.02H3.56V9h3.55v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(
+                "section, .hero, .education, .skills, .projects, .sessions"
+            );
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("section-animate");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.15 }
+            );
+
+            sections.forEach((section) => observer.observe(section));
+        });
+    </script>
+</html>
