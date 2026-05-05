@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg-grad)"/>
+
+  <!-- Shield -->
+  <path d="M16 4 L25.5 7.5 L25.5 17 Q25.5 23.5 16 28 Q6.5 23.5 6.5 17 L6.5 7.5 Z"
+        fill="url(#shield-grad)"/>
+
+  <!-- Subtle top highlight on shield -->
+  <path d="M16 5.5 L24.5 8.5 L24.5 10 Q20 9 16 9 Q12 9 7.5 10 L7.5 8.5 Z"
+        fill="white" opacity="0.15"/>
+
+  <!-- T lettermark -->
+  <text x="16" y="21.5"
+        font-family="Inter, ui-sans-serif, system-ui, sans-serif"
+        font-size="13"
+        font-weight="800"
+        fill="white"
+        text-anchor="middle"
+        letter-spacing="-0.5">T</text>
+</svg>
